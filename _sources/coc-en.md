@@ -35,6 +35,7 @@ Examples of unacceptable behavior include:
   address, without their explicit permission
 * Other conduct which could reasonably be considered inappropriate in a
   professional setting
+* Not showing academic or professional honesty, and taking content from other spaces, authorships or portals, using them without indicating the source or reference.  
 
 ## Enforcement Responsibilities
 
