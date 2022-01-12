@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&lt;no title&gt; &#8212; OpenScienceLabs COC</title>
+    <title>Código de Conducta convenido para Contribuyentes &#8212; OpenScienceLabs COC</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -41,7 +41,7 @@
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -95,10 +95,15 @@
   Code of Conduct
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="coc-en.html">
    Contributor Covenant Code of Conduct
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Código de Conducta convenido para Contribuyentes
   </a>
  </li>
 </ul>
@@ -143,7 +148,7 @@
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -161,13 +166,48 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nuestro-compromiso">
+   Nuestro compromiso
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nuestros-estandares">
+   Nuestros estándares
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aplicacion-de-las-responsabilidades">
+   Aplicación de las responsabilidades
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#alcance">
+   Alcance
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aplicacion">
+   Aplicación
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#guias-de-aplicacion">
+   Guías de Aplicación
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#atribucion">
+   Atribución
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -176,60 +216,134 @@
 </div>
     <div id="main-content" class="row">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Código de Conducta convenido para Contribuyentes</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nuestro-compromiso">
+   Nuestro compromiso
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nuestros-estandares">
+   Nuestros estándares
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aplicacion-de-las-responsabilidades">
+   Aplicación de las responsabilidades
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#alcance">
+   Alcance
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aplicacion">
+   Aplicación
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#guias-de-aplicacion">
+   Guías de Aplicación
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#atribucion">
+   Atribución
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
               <div>
                 
-  <p>Código de Conducta convenido para Contribuyentes
-Nuestro compromiso
-Nosotros, como miembros, contribuyentes y administradores nos comprometemos a hacer de la participación en nuestra comunidad una experiencia libre de acoso para todo el mundo, independientemente de la edad, dimensión corporal, minusvalía visible o invisible, etnicidad, características sexuales, identidad y expresión de género, nivel de experiencia, educación, nivel socio-económico, nacionalidad, apariencia personal, raza, religión, o identidad u orientación sexual.</p>
+  <div class="section" id="codigo-de-conducta-convenido-para-contribuyentes">
+<h1>Código de Conducta convenido para Contribuyentes<a class="headerlink" href="#codigo-de-conducta-convenido-para-contribuyentes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="nuestro-compromiso">
+<h2>Nuestro compromiso<a class="headerlink" href="#nuestro-compromiso" title="Permalink to this headline">¶</a></h2>
+<p>Nosotros, como miembros, contribuyentes y administradores nos comprometemos a hacer de la participación en nuestra comunidad una experiencia libre de acoso para todo el mundo, independientemente de la edad, dimensión corporal, minusvalía visible o invisible, etnicidad, características sexuales, identidad y expresión de género, nivel de experiencia, educación, nivel socio-económico, nacionalidad, apariencia personal, raza, religión, o identidad u orientación sexual.</p>
 <p>Nos comprometemos a actuar e interactuar de maneras que contribuyan a una comunidad abierta, acogedora, diversa, inclusiva y sana.</p>
-<p>Nuestros estándares
-Ejemplos de comportamiento que contribuyen a crear un ambiente positivo para nuestra comunidad:</p>
-<p>Demostrar empatía y amabilidad ante otras personas
-Respeto a diferentes opiniones, puntos de vista y experiencias
-Dar y aceptar adecuadamente retroalimentación constructiva
-Aceptar la responsabilidad y disculparse ante quienes se vean afectados por nuestros errores, aprendiendo de la experiencia
-Centrarse en lo que sea mejor no sólo para nosotros como individuos, sino para la comunidad en general
-Ejemplos de comportamiento inaceptable:</p>
-<p>El uso de lenguaje o imágenes sexualizadas, y aproximaciones o atenciones sexuales de cualquier tipo
-Comentarios despectivos (trolling), insultantes o derogatorios, y ataques personales o políticos
-El acoso en público o privado
-Publicar información privada de otras personas, tales como direcciones físicas o de correo electrónico, sin su permiso explícito
-Otras conductas que puedan ser razonablemente consideradas como inapropiadas en un entorno profesional
-Aplicación de las responsabilidades
-Los administradores de la comunidad son responsables de aclarar y hacer cumplir nuestros estándares de comportamiento aceptable y tomarán acciones apropiadas y correctivas de forma justa en respuesta a cualquier comportamiento que consideren inapropiado, amenazante, ofensivo o dañino.</p>
-<p>Los administradores de la comunidad tendrán el derecho y la responsabilidad de eliminar, editar o rechazar comentarios, commits, código, ediciones de páginas de wiki, issues y otras contribuciones que no se alineen con este Código de Conducta, y comunicarán las razones para sus decisiones de moderación cuando sea apropiado.</p>
-<p>Alcance
-Este código de conducta aplica tanto a espacios del proyecto como a espacios públicos donde un individuo esté en representación del proyecto o comunidad. Ejemplos de esto incluyen el uso de la cuenta oficial de correo electrónico, publicaciones a través de las redes sociales oficiales, o presentaciones con personas designadas en eventos en línea o no.</p>
-<p>Aplicación
-Instancias de comportamiento abusivo, acosador o inaceptable de otro modo podrán ser reportadas a los administradores de la comunidad responsables del cumplimiento a través de <a class="reference external" href="mailto:opensciencelabs&#37;&#52;&#48;gmail&#46;com">opensciencelabs<span>&#64;</span>gmail<span>&#46;</span>com</a>. Todas las quejas serán evaluadas e investigadas de una manera puntual y justa.</p>
-<p>Todos los administradores de la comunidad están obligados a respetar la privacidad y la seguridad de quienes reporten incidentes.</p>
-<p>Guías de Aplicación
-Los administradores de la comunidad seguirán estas Guías de Impacto en la Comunidad para determinar las consecuencias de cualquier acción que juzguen como un incumplimiento de este Código de Conducta:</p>
+</div>
+<div class="section" id="nuestros-estandares">
+<h2>Nuestros estándares<a class="headerlink" href="#nuestros-estandares" title="Permalink to this headline">¶</a></h2>
+<p>Ejemplos de comportamiento que contribuyen a crear un ambiente positivo para nuestra comunidad:</p>
 <ol class="simple">
-<li><p>Corrección
+<li><p>Demostrar empatía y amabilidad ante otras personas</p></li>
+<li><p>Respeto a diferentes opiniones, puntos de vista y experiencias</p></li>
+<li><p>Dar y aceptar adecuadamente retroalimentación constructiva</p></li>
+<li><p>Aceptar la responsabilidad y disculparse ante quienes se vean afectados por nuestros errores, aprendiendo de la experiencia</p></li>
+<li><p>Centrarse en lo que sea mejor no sólo para nosotros como individuos, sino para la comunidad en general</p></li>
+</ol>
+<p>Ejemplos de comportamiento inaceptable:</p>
+<ol class="simple">
+<li><p>El uso de lenguaje o imágenes sexualizadas, y aproximaciones o atenciones sexuales de cualquier tipo</p></li>
+<li><p>Comentarios despectivos (trolling), insultantes o derogatorios, y ataques personales o políticos</p></li>
+<li><p>El acoso en público o privado</p></li>
+<li><p>Publicar información privada de otras personas, tales como direcciones físicas o de correo electrónico, sin su permiso explícito</p></li>
+<li><p>Otras conductas que puedan ser razonablemente consideradas como inapropiadas en un entorno profesional</p></li>
+<li><p>No mostrar honestidad académica o profesional, y tomar contenido de otros espacios, autorías o portales, utilizándolos sin indicar la fuente o referencia.</p></li>
+</ol>
+</div>
+<div class="section" id="aplicacion-de-las-responsabilidades">
+<h2>Aplicación de las responsabilidades<a class="headerlink" href="#aplicacion-de-las-responsabilidades" title="Permalink to this headline">¶</a></h2>
+<p>Los administradores de la comunidad son responsables de aclarar y hacer cumplir nuestros estándares de comportamiento aceptable y tomarán acciones apropiadas y correctivas de forma justa en respuesta a cualquier comportamiento que consideren inapropiado, amenazante, ofensivo o dañino.</p>
+<p>Los administradores de la comunidad tendrán el derecho y la responsabilidad de eliminar, editar o rechazar comentarios, commits, código, ediciones de páginas de wiki, issues y otras contribuciones que no se alineen con este Código de Conducta, y comunicarán las razones para sus decisiones de moderación cuando sea apropiado.</p>
+</div>
+<div class="section" id="alcance">
+<h2>Alcance<a class="headerlink" href="#alcance" title="Permalink to this headline">¶</a></h2>
+<p>Este código de conducta aplica tanto a espacios del proyecto como a espacios públicos donde un individuo esté en representación del proyecto o comunidad. Ejemplos de esto incluyen el uso de la cuenta oficial de correo electrónico, publicaciones a través de las redes sociales oficiales, o presentaciones con personas designadas en eventos en línea o no.</p>
+</div>
+<div class="section" id="aplicacion">
+<h2>Aplicación<a class="headerlink" href="#aplicacion" title="Permalink to this headline">¶</a></h2>
+<p>Instancias de comportamiento abusivo, acosador o inaceptable de otro modo podrán ser reportadas a los administradores de la comunidad responsables del cumplimiento a través de <a class="reference external" href="mailto:opensciencelabs&#37;&#52;&#48;gmail&#46;com">opensciencelabs<span>&#64;</span>gmail<span>&#46;</span>com</a>. Todas las quejas serán evaluadas e investigadas de una manera puntual y justa.</p>
+<p>Todos los administradores de la comunidad están obligados a respetar la privacidad y la seguridad de quienes reporten incidentes.</p>
+</div>
+<div class="section" id="guias-de-aplicacion">
+<h2>Guías de Aplicación<a class="headerlink" href="#guias-de-aplicacion" title="Permalink to this headline">¶</a></h2>
+<p>Los administradores de la comunidad seguirán estas Guías de Impacto en la Comunidad para determinar las consecuencias de cualquier acción que juzguen como un incumplimiento de este Código de Conducta:</p>
+<ol class="simple">
+<li><p><strong>Corrección</strong>
 Impacto en la Comunidad: El uso de lenguaje inapropiado u otro comportamiento considerado no profesional o no acogedor en la comunidad.</p></li>
 </ol>
 <p>Consecuencia: Un aviso escrito y privado por parte de los administradores de la comunidad, proporcionando claridad alrededor de la naturaleza de este incumplimiento y una explicación de por qué el comportamiento es inaceptable. Una disculpa pública podría ser solicitada.</p>
 <ol class="simple">
-<li><p>Aviso
+<li><p><strong>Aviso</strong>
 Impacto en la Comunidad: Un incumplimiento causado por un único incidente o por una cadena de acciones.</p></li>
 </ol>
 <p>Consecuencia: Un aviso con consecuencias por comportamiento prolongado. No se interactúa con las personas involucradas, incluyendo interacción no solicitada con quienes se encuentran aplicando el Código de Conducta, por un periodo especificado de tiempo. Esto incluye evitar las interacciones en espacios de la comunidad, así como a través de canales externos como las redes sociales. Incumplir estos términos puede conducir a una expulsión temporal o permanente.</p>
 <ol class="simple">
-<li><p>Expulsión temporal
+<li><p><strong>Expulsión temporal</strong>
 Impacto en la Comunidad: Una serie de incumplimientos de los estándares de la comunidad, incluyendo comportamiento inapropiado continuo.</p></li>
 </ol>
 <p>Consecuencia: Una expulsión temporal de cualquier forma de interacción o comunicación pública con la comunidad durante un intervalo de tiempo especificado. No se permite interactuar de manera pública o privada con las personas involucradas, incluyendo interacciones no solicitadas con quienes se encuentran aplicando el Código de Conducta, durante este periodo. Incumplir estos términos puede conducir a una expulsión permanente.</p>
 <ol class="simple">
-<li><p>Expulsión permanente
+<li><p><strong>Expulsión permanente</strong>
 Impacto en la Comunidad: Demostrar un patrón sistemático de incumplimientos de los estándares de la comunidad, incluyendo conductas inapropiadas prolongadas en el tiempo, acoso de individuos, o agresiones o menosprecio a grupos de individuos.</p></li>
 </ol>
 <p>Consecuencia: Una expulsión permanente de cualquier tipo de interacción pública con la comunidad del proyecto.</p>
-<p>Atribución
-Este Código de Conducta es una adaptación del Contributor Covenant, versión 2.0, disponible en <a class="reference external" href="https://www.contributor-covenant.org/es/version/2/0/code_of_conduct.html">https://www.contributor-covenant.org/es/version/2/0/code_of_conduct.html</a></p>
+</div>
+<div class="section" id="atribucion">
+<h2>Atribución<a class="headerlink" href="#atribucion" title="Permalink to this headline">¶</a></h2>
+<p>Este Código de Conducta es una adaptación del Contributor Covenant, versión 2.0, disponible en <a class="reference external" href="https://www.contributor-covenant.org/es/version/2/0/code_of_conduct.html">https://www.contributor-covenant.org/es/version/2/0/code_of_conduct.html</a></p>
 <p>Las Guías de Impacto en la Comunidad están inspiradas en la escalera de aplicación del código de conducta de Mozilla.</p>
 <p>Para respuestas a las preguntas frecuentes de este código de conducta, consulta las FAQ en <a class="reference external" href="https://www.contributor-covenant.org/faq">https://www.contributor-covenant.org/faq</a>. Hay traducciones disponibles en <a class="reference external" href="https://www.contributor-covenant.org/translations">https://www.contributor-covenant.org/translations</a></p>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -253,8 +367,8 @@ Este Código de Conducta es una adaptación del Contributor Covenant, versión 2
 
               </div>
               
-        
-            <!-- Previous / next buttons -->
+            
+                <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="coc-en.html" title="previous page">
         <i class="fas fa-angle-left"></i>
@@ -264,22 +378,20 @@ Este Código de Conducta es una adaptación del Contributor Covenant, versión 2
         </div>
     </a>
 </div>
-        
+            
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By OpenScienceLabs Team<br/>
-        
-            &copy; Copyright 2021.<br/>
-          <div class="extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-          </div>
-      </p>
-    </div>
-  </footer>
+  <p>
+    
+      By OpenScienceLabs Team<br/>
+    
+        &copy; Copyright 2021.<br/>
+      <div class="extra_footer">
+        Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+      </div>
+  </p>
+</footer>
 </main>
 
 
